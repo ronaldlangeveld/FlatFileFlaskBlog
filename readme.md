@@ -9,11 +9,10 @@ My goal is to have it super basic and simple, very much with the likes of Pico o
 FFFB should:
 
  - Not contain a database.
- - No admin
- -	Not store any critical info like username/passwords/etc.
+ - Have no admin
  -	Be able to update easily through git push / pull without breaking the site.
  -	Make use of Jinja to simplify templating
- -	Post a new content using using .md files (Markdown)
+ -	Post new content by only uploading .md files to your server (Markdown)
 
 Basically, imagine a blog / cms using [Flasks "micro" philosophy](http://flask.pocoo.org/docs/0.12/foreword/#what-does-micro-mean).
 
