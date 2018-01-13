@@ -16,4 +16,12 @@ FFFB should:
 
 Basically, imagine a blog / cms using [Flasks "micro" philosophy](http://flask.pocoo.org/docs/0.12/foreword/#what-does-micro-mean).
 
+## Getting started
+### Run locally
+1. `export FLASK_APP=server.py`
+2. `export FLASK_DEBUG=1`
+3. `flask run`
 
+## Requirements
+* `pip install markdown2`
+* `pip install Flask-Markdown`
