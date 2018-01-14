@@ -25,3 +25,17 @@ Basically, imagine a blog / cms using [Flasks "micro" philosophy](http://flask.p
 ## Requirements
 * `pip install markdown2`
 * `pip install Flask-Markdown`
+
+## Writing a blog
+### Setting parameters
+To make use of the title, author and date tags, you must set them at the top of your `blog.md` file in order to parse them correctly. The parameter syntax must be exactly as follows:
+
+``` 
+<!-- VARS
+##title: Your title
+##author: Author name
+##date: Date
+./VARS -->
+```
+
+These parameters are called in the templating engine through `{{ post.title }}`, `{{ post.date }}` or `{{ post.author }}`.

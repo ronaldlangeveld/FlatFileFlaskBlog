@@ -5,7 +5,9 @@
 
 
 {% for post in posts %}
-    {{ post | safe }}
+    <h2>{{ post.title}}</h2>
+    Author: {{ post.title}} | Date: {{ post.date }}
+    {{ post.content | safe }}
 {% endfor %}
 
 

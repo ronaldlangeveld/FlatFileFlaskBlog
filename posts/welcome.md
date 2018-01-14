@@ -1,9 +1,8 @@
----
-Title: I started a new blog 
-Author: Ronald
-Date: 2018/01/03
-Template: post
----
+<!-- VARS
+##title: I started a new blog
+##author: Ronald
+##date: 2018/01/03
+./VARS -->
 
 Welcome to me new blog.. again..
 
