@@ -2,6 +2,7 @@
 ##title: I started a new blog
 ##author: Ronald
 ##date: 2018/01/03
+##slug: i-started-a-new-blog
 ./VARS -->
 
 Welcome to me new blog.. again..

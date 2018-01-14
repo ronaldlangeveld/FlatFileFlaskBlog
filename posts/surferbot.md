@@ -2,6 +2,7 @@
 ##title: I made a Telegram bot that tells me local surf conditions.
 ##author: Ronald
 ##date: 2018/01/10
+##slug: i-made-a-telegram-bot-that-tells-me-local-surf-conditions
 ./VARS -->
 
 After I made Downtime bot, I decided to go a bit further and make it related to something I’m truly passionate about. Surfing.
