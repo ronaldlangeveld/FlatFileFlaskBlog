@@ -3,6 +3,12 @@
 
 {% block main %}
 
+
+{% for post in posts %}
+    {{ post | safe }}
+{% endfor %}
+
+
     <img class="profile-pic" src="/static/img/profile.jpg">
 <body>
     <section id="content">
