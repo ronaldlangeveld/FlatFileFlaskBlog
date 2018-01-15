@@ -1,8 +1,8 @@
 <!-- VARS
-##title: I started a new blog
-##author: Ronald
-##date: 2018/01/03
-##slug: i-started-a-new-blog
+##title: I started a new blog ./title
+##author: Ronald ./author
+##date: 2018/01/03 ./date
+##slug: i-started-a-new-blog ./slug
 ./VARS -->
 
 Welcome to me new blog.. again..

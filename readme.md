@@ -32,10 +32,10 @@ To make use of the title, author and date tags, you must set them at the top of 
 
 ``` 
 <!-- VARS
-##title: Your title
-##author: Author name
-##date: Date
-##slug: your-slug-like-this
+##title: Your title ./title
+##author: Author name ./author
+##date: Date ./date
+##slug: your-slug-like-this ./slug
 ./VARS -->
 ```
 

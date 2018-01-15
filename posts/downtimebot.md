@@ -1,9 +1,9 @@
 
 <!-- VARS
-##title: Getting Downtime Bot featured on Product Hunt
-##author: Ronald
-##date: 2018/01/04
-##slug: getting-downtime-bot-featured-on-product-hunt
+##title: Getting Downtime Bot featured on Product Hunt ./title
+##author: Ronald ./author
+##date: 2018/01/04 ./date
+##slug: getting-downtime-bot-featured-on-product-hunt ./slug
 ./VARS -->
 
 Launching products is what I love doing..... well, creating products and seeing it come to life and then sharing it with the world.. It think it's the coding part that's addictive. Writing code and then to see my computer finally doing what I asked it to do is what makes my dopamine levels rocket. It's satisfying.
