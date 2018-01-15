@@ -1,5 +1,4 @@
-{# Complete list of posts #}
-
+{# Single Post - not working yet #}
 {% extends "base.html" %}
 
 
@@ -17,10 +16,10 @@
                        <p><a href="/">go back home</a></p>
                     <div style="text-align: left;">
 
-                        {% for post in posts|sort(reverse = true, attribute='date') %}
+                        {% for post in posts %}
     <a href="/posts/{{ post.slug }}"><h2>{{ post.title}}</h2></a>
     Author: {{ post.author}} | Date: {{ post.date }}
-{#    {{ post.content | safe }}#}
+    {{ post.content | safe }}
 {% endfor %}
 
 
