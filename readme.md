@@ -35,6 +35,7 @@ To make use of the title, author and date tags, you must set them at the top of 
 ##title: Your title
 ##author: Author name
 ##date: Date
+##slug: your-slug-like-this
 ./VARS -->
 ```
 

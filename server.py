@@ -1,10 +1,9 @@
 import os
 from flask import Flask
 from flask import render_template
-from flask import Markup
 from jinja2 import Template
-import markdown2
 import os
+from utils import PostsParser
 
 app = Flask(__name__)
 
@@ -18,42 +17,24 @@ def main():
 
 @app.route("/posts")
 def blog():
-	posts = []
-
-	# Loops over all posts and stores html in posts[]
-	for post in os.listdir("posts/"):
-		if post.endswith('.md'):
-			path = "posts/" + post
-			html = markdown2.markdown_path(path)
-			title, author, date = getVars(html)
-			posts.append({
-				'title':title,
-				'author':author,
-				'date':date,
-				'content':html
-				})
+	posts_objects = PostsParser()
+	posts = posts_objects.posts
 
 	return render_template('posts.html', posts=posts)
 
-
-#
-# Utils
-#
-
-def getVars(html):
+@app.route('/posts/<slug>')
+def single_blog(slug):
 	'''
-	Parses the html to get the variables.
-	@input markdown to html string
-	@returns title, author and date
+	Shows individual post
+	TODO: normal 404 if not found
+	TODO: create template for single-post
+	TODO: remove '\n from parsing?'
 	'''
-	begin = html.find("<!-- VARS")
-	end = html.find("./VARS -->")
-	params = html[begin+10:end]
+	posts_objects = PostsParser()
+	posts = posts_objects.posts
 
-	title = params[(params.find("##title: ")+9):params.find("\n")]
-	author = params[(params.find("##author: ")+10):params.find("\n")]
-	date = params[(params.find("##date: ")+8):]
+	for post in posts:
+		if post['slug'] == slug + '\n':
+			return post['content']
 
-	return title, author, date
-
-
+	return "404"
