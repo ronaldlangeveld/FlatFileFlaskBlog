@@ -46,5 +46,3 @@ def single_blog(slug):
     for post in posts:
         if post['slug'] == slug + '\n':
             return post['content']
-
-
