@@ -1,8 +1,8 @@
 # Flat File Flask Blog
 
-Last updated: 13 January 2018
+Last updated: 15 January 2018
 
-I'm busy creating my own blog / cms with Flask.
+I'm busy creating my own blog / cms with Flask and Python 3
 
 My goal is to have it super basic and simple, very much with the likes of Pico or Jekyll, but with as little dependencies as possible, other than Flask and Python, so you can modify it as you wish as it is open source.
 

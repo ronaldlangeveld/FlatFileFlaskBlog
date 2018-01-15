@@ -35,7 +35,7 @@ class PostsParser():
 
 		title = params[(params.find("##title: ")+9):params.find("\n")]
 		author = params[(params.find("##author: ")+10):params.find("\n")]
-		author = params[(params.find("##: ")+10):params.find("\n")]
+		# author = params[(params.find("##: ")+10):params.find("\n")]
 		date = params[(params.find("##date: ")+8):params.find("\n")]
 		slug = params[(params.find("##slug: ")+8):]
 
