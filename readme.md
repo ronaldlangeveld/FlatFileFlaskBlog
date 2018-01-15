@@ -17,14 +17,24 @@ FFFB should:
 Basically, imagine a blog / cms using [Flasks "micro" philosophy](http://flask.pocoo.org/docs/0.12/foreword/#what-does-micro-mean).
 
 ## Getting started
+
+It's highly recommended that you run this in a python virtual environment.
+
+Clone this project into your dirctory of choice.
+
+## Requirements
+* `pip install flask`
+* `pip install markdown2`
+* `pip install Flask-Markdown`
+
+Alternativaly 
+* `pip install -r requirements.txt`
+
 ### Run locally
 1. `export FLASK_APP=server.py`
 2. `export FLASK_DEBUG=1`
 3. `flask run`
 
-## Requirements
-* `pip install markdown2`
-* `pip install Flask-Markdown`
 
 ## Writing a blog
 ### Setting parameters
@@ -32,10 +42,10 @@ To make use of the title, author and date tags, you must set them at the top of 
 
 ``` 
 <!-- VARS
-##title: Your title
-##author: Author name
-##date: Date
-##slug: your-slug-like-this
+##title: Your title ./title
+##author: Author name ./author
+##date: Date ./date
+##slug: your-slug-like-this ./slug
 ./VARS -->
 ```
 
