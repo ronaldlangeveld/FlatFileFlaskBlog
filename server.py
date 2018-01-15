@@ -33,7 +33,8 @@ def single_blog(slug):
 
     for post in posts:
         if post['slug'] == slug:
-            return post['content']
+            # return post['content']
+            return render_template('single-post.html', post=post)
             
     return page_not_found(404)
 
