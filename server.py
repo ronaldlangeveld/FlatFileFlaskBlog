@@ -10,12 +10,6 @@ app = Flask(__name__)
 # template_dir = os.path.abspath('templates/')
 # app = Flask(__name__, template_folder=template_dir)
 
-# Shows individual post
-# TODO: normal 404 if not found
-# TODO: create template for single-post
-# TODO: remove '\n from parsing?'
-
-
 @app.route("/")
 def main():
     posts_objects = PostsParser()
@@ -28,25 +22,20 @@ def blog():
     posts = posts_objects.posts
     return render_template('posts.html', posts=posts)
 
-# @app.route('/posts/<slug>')
-# def single_blog(slug):
-#     posts_objects = PostsParser()
-#     posts = posts_objects.posts
-#
-#     for post in posts:
-#         if post['slug'] == slug + '\n':
-#             return post['content']
-#             return "404"
-
 @app.route('/posts/<slug>')
 def single_blog(slug):
+    # Shows individual post
+    # TODO: normal 404 if not found
+    # TODO: create template for single-post
+    # TODO: remove '\n from parsing?'
     posts_objects = PostsParser()
     posts = posts_objects.posts
 
     for post in posts:
         if post['slug'] == slug:
             return post['content']
-            return "404"
+            
+    return page_not_found(404)
 
 
 @app.errorhandler(404)
