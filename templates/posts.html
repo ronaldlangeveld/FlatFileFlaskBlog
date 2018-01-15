@@ -17,9 +17,9 @@
                        <p><a href="/">go back home</a></p>
                     <div style="text-align: left;">
 
-                        {% for post in posts | sort(attribute='date') %}
+                        {% for post in posts|sort(reverse = true, attribute='date') %}
     <a href="/posts/{{ post.slug }}"><h2>{{ post.title}}</h2></a>
-    Author: {{ post.title}} | Date: {{ post.date }}
+    Author: {{ post.author}} | Date: {{ post.date }}
 {#    {{ post.content | safe }}#}
 {% endfor %}
 

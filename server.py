@@ -44,9 +44,9 @@ def single_blog(slug):
     posts = posts_objects.posts
 
     for post in posts:
-        if post['slug'] == slug + '\n':
+        if post['slug'] == slug:
             return post['content']
-        return "404"
+            return "404"
 
 
 @app.errorhandler(404)
