@@ -1,6 +1,6 @@
 # Flat File Flask Blog
 
-Last updated: 15 January 2018
+Last updated: 16 January 2018
 
 I'm busy creating my own blog / cms with Flask and Python 3
 
