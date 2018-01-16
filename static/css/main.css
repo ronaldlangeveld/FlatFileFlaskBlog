@@ -1,7 +1,5 @@
 /*=================================*/
-/* minimal
-/* By: Ronald Langeveld
-/* http: //ronaldla.life
+
 /*=================================*/
 
 /* Reset Styles
@@ -217,37 +215,7 @@ dd {
 }
 
 /*my own styles*/
-.profile-pic {
-    top: 1rem;
-    right: 1rem;
-    border-radius: 50%;
-    position: fixed;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 1);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 12rem;
-    height: 12rem;
-}
-
-        @media (max-width:1024px) {
-            .profile-pic{
-                display: none;
-
-            }
-        }
 
 .foot-links {
     top: 95vh;
 }
-
-.timedate {
-    font-size: 1rem;
-
-}
-        @media (max-width:1024px) {
-            .timedate{
-                display: none;
-
-            }
-        }

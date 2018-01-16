@@ -6,8 +6,6 @@
 {% block main %}
 
 
-
-    <img class="profile-pic" src="/static/img/profile.jpg">
 <body>
     <section id="content">
         <div class="container">
@@ -19,8 +17,6 @@
 
                         {% for post in posts|sort(reverse = true, attribute='date') %}
     <a href="/posts/{{ post.slug }}"><h2>{{ post.title}}</h2></a>
-    Author: {{ post.author}} | Date: {{ post.date }}
-{#    {{ post.content | safe }}#}
 {% endfor %}
 
 
@@ -35,18 +31,7 @@
 
     <br>
     <br>
-            <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="foot-links">
-<p>find me on <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/burgundy93" target="_blank">github</a>, <i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://instagram.com/ronaldl93" target="_blank">instagram</a> and <i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/ronaldl93_" target="_blank">twitter</a></p>
-        <p>if you can't send me a DM on twitter feel free to email me at <a href="mailto:hi@ronaldlangeveld.com">hi@ronaldlangeveld.com</a></p>
-</div>
-</div>
-</div>
-</div>
-    </footer>
+
 </body>
 
 

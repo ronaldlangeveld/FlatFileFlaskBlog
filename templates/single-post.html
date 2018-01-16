@@ -1,12 +1,10 @@
-{# Single Post - not working yet #}
+{# Template for blog posts #}
+{#this is where you blog post with display (the md file will parse here)#}
 {% extends "base.html" %}
 
 
 {% block main %}
 
-
-
-    <img class="profile-pic" src="/static/img/profile.jpg">
 <body>
     <section id="content">
         <div class="container">
@@ -16,12 +14,10 @@
                        <p><a href="/">go back home</a></p>
                     <div style="text-align: left;">
 
-
     <a href="/posts/{{ post.slug }}"><h2>{{ post.title }}</h2></a>
     Author: {{ post.author}} | Date: {{ post.date }}
+                        <br>
     {{ post.content | safe }}
-
-
 
 </div>
 
@@ -31,21 +27,6 @@
 </div>
         </div>
     </section>
-
-    <br>
-    <br>
-            <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="foot-links">
-<p>find me on <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/burgundy93" target="_blank">github</a>, <i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://instagram.com/ronaldl93" target="_blank">instagram</a> and <i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/ronaldl93_" target="_blank">twitter</a></p>
-        <p>if you can't send me a DM on twitter feel free to email me at <a href="mailto:hi@ronaldlangeveld.com">hi@ronaldlangeveld.com</a></p>
-</div>
-</div>
-</div>
-</div>
-    </footer>
 </body>
 
 

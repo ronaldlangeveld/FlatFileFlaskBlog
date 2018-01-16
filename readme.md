@@ -49,4 +49,4 @@ To make use of the title, author and date tags, you must set them at the top of 
 ./VARS -->
 ```
 
-These parameters are called in the templating engine through `{{ post.title }}`, `{{ post.date }}` or `{{ post.author }}`.
+These parameters are called in the templating engine through `{{ post.title }}`, `{{ post.slug }}`, `{{ post.date }}` or `{{ post.author }}`.
