@@ -55,7 +55,7 @@ These parameters are called in the templating engine through `{{ post.title }}`,
 
 ## Production
 
-There's multiple ways you can get deploy flask blog.
+There's multiple ways you can deploy your flask blog.
 
 [Heroku](https://progblog.io/How-to-deploy-a-Flask-App-to-Heroku/)
 
