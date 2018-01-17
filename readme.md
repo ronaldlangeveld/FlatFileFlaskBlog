@@ -50,3 +50,17 @@ To make use of the title, author and date tags, you must set them at the top of 
 ```
 
 These parameters are called in the templating engine through `{{ post.title }}`, `{{ post.slug }}`, `{{ post.date }}` or `{{ post.author }}`.
+
+
+
+## Production
+
+There's multiple ways you can get deploy flask blog.
+
+[Heroku](https://progblog.io/How-to-deploy-a-Flask-App-to-Heroku/)
+
+[Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04)
+
+[PytthonAnywhere](https://help.pythonanywhere.com/pages/Flask/)
+
+
