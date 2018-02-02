@@ -61,6 +61,6 @@ There's multiple ways you can deploy your flask blog.
 
 [Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04)
 
-[PytthonAnywhere](https://help.pythonanywhere.com/pages/Flask/)
+[PythonAnywhere](https://help.pythonanywhere.com/pages/Flask/)
 
 
