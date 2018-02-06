@@ -14,12 +14,12 @@ class PostsParser():
             if post.endswith('.md'):
                 path = "posts/" + post
                 html = markdown2.markdown_path(path)
-                title, author, date, slug = self.getVars(html)
+                title, author, date = self.getVars(html)
                 self.posts.append({
                     'title':title,
                     'author':author,
                     'date':date,
-                    'slug':slug,
+                    'slug':post.replace('.md', ''),
                     'content':html
                 })
 
@@ -36,6 +36,5 @@ class PostsParser():
         title = params[(params.find("##title: ") + 9):params.find(" ./title")]
         author = params[(params.find("##author: ") + 10):params.find(" ./author")]
         date = params[(params.find("##date: ") + 8):params.find(" ./date")]
-        slug = params[(params.find("##slug: ") + 8):params.find(" ./slug")]
 
-        return title, author, date, slug
+        return title, author, date

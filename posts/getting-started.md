@@ -3,7 +3,6 @@
 ##title: Getting Started with FFFB ./title
 ##author: Ronald ./author
 ##date: 2018/01/16 ./date
-##slug: getting-started ./slug
 ./VARS -->
 
 <hr>

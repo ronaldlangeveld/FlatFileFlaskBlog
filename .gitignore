@@ -2,7 +2,7 @@
 migrations/
 db.sqlite3
 .ds_store
-
+*.pyc
 .ds_store
 
 # Byte-compiled / optimized / DLL files
