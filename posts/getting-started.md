@@ -3,6 +3,7 @@
 ##title: Getting Started with FFFB ./title
 ##author: Ronald ./author
 ##date: 2018/01/16 ./date
+##image: welcome.gif ./image
 ./VARS -->
 
 <hr>
