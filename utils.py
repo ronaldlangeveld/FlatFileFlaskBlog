@@ -14,8 +14,8 @@ class PostsParser():
             if post.endswith('.md'):
                 path = "posts/" + post
                 html = markdown2.markdown_path(path)
-
                 title, author, date, image = self.getVars(html)
+                
                 self.posts.append({
                     'title':title,
                     'author':author,
