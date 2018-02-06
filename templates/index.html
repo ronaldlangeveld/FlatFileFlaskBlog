@@ -9,27 +9,28 @@
         <div class="container">
             <div class="row">
                 <div style="text-align: center;" class="col-12">
-      <h1>Welcome to FFFB</h1>
+                    <h1>Welcome to FFFB</h1>
                     <h2>Flat File Flask Blog is a simple open-source blogging engine that runs off Python 3 and Flask.</h2>
                     <h2>It was developed to be super minimal and customisable.</h2>
-</div>
-</div>
-</div>
-
-
+                </div>
+            </div>
+        </div>
     </header>
 
     <section id="content">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                <h3 style="text-align: left;">Latest Posts</h3>
-                        {% for post in posts|sort(reverse = true, attribute='date') %}
-    <a href="/posts/{{ post.slug }}"><p>{{ post.title}}</p></a>
+                    <h3 style="text-align: left;">Latest Posts</h3>
+                    {% for post in posts|sort(reverse = true, attribute='date') %}
+                        <div class="featured">
+                            <a href="/posts/{{ post.slug }}" class="featured--title">{{ post.title}}</a>
+                            <img src="{{ post.image }}" class="featured--image">
+                        </div>
                     {% endfor %}
                     <p><a href="/posts">All Posts</a></p>
-</div>
-</div>
+                </div>
+            </div>
         </div>
     </section>
 

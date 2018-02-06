@@ -46,10 +46,14 @@ To make use of the title, author and date tags, you must set them at the top of 
 ##author: Author name ./author
 ##date: Date ./date
 ##slug: your-slug-like-this ./slug
+##image: your-featured-image.jpg ./image
 ./VARS -->
 ```
 
-These parameters are called in the templating engine through `{{ post.title }}`, `{{ post.slug }}`, `{{ post.date }}` or `{{ post.author }}`.
+These parameters are called in the templating engine through `{{ post.title }}`, `{{ post.slug }}`, `{{ post.date }}`, `{{ post.image }}` or `{{ post.author }}`. 
+
+#### Setting a featured image
+To set a featured image you place your-picture.jpg in the `/static/featured-images/` folder. In your vars section you set `image` tag to `your-picture.jpg` and now you can call this image url with `{{ post.image }}`
 
 
 

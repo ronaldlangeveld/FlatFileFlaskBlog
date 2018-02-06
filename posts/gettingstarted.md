@@ -4,6 +4,7 @@
 ##author: Ronald ./author
 ##date: 2018/01/16 ./date
 ##slug: getting-started ./slug
+##image: welcome.gif ./image
 ./VARS -->
 
 <hr>

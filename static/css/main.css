@@ -219,3 +219,23 @@ dd {
 .foot-links {
     top: 95vh;
 }
+
+.featured {
+    position: relative;
+}
+
+.featured--image {
+    width: 200px;
+    height: auto;
+}
+
+.featured--title {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    color: white !important;
+    background-color: rgba(255, 5, 82, 0.89);
+    border-radius: 3px;
+    padding: 3px;
+    font-weight: bolder;
+}
