@@ -3,6 +3,11 @@
 ##title: Getting Started with FFFB ./title
 ##author: Ronald ./author
 ##date: 2018/01/16 ./date
+<<<<<<< HEAD:posts/getting-started.md
+=======
+##slug: getting-started ./slug
+>>>>>>> 8a57f23301c17a327f1c4003f5c1286ff7bba205:posts/gettingstarted.md
+##image: welcome.gif ./image
 ./VARS -->
 
 <hr>
