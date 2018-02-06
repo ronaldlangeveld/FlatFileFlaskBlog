@@ -45,11 +45,12 @@ To make use of the title, author and date tags, you must set them at the top of 
 ##title: Your title ./title
 ##author: Author name ./author
 ##date: Date ./date
-##slug: your-slug-like-this ./slug
 ./VARS -->
 ```
 
 These parameters are called in the templating engine through `{{ post.title }}`, `{{ post.slug }}`, `{{ post.date }}` or `{{ post.author }}`.
+
+* The slug of the blogs are now initialized by the filename of the post. So make sure these are meaningfull and unique.
 
 
 
