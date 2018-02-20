@@ -37,10 +37,31 @@ To make use of the title, author and date tags, you must set them at the top of 
 <div class="row">
 <div class="col-6">
 
-<img style="width: 50vw" src="/static/img/blogtags.png">
+<img style="width: 50vw" src="/static/img/blogtags2.png">
 </div>
 </div>
+
+
 
 And see, you can simply add HTML within your .MD files and your images will display!
 
-These parameters are called in the templating engine through `{{ post.title }}`, `{{ post.slug }}`, `{{ post.date }}` or `{{ post.author }}`.
+
+These parameters are called in the templating engine through `{{ post.title }}`, `{{ post.slug }}`, `{{ post.date }}`, `{{ post.image }}` or `{{ post.author }}`. 
+
+#### Setting a featured image
+To set a featured image you place your-picture.jpg in the `/static/featured-images/` folder. In your vars section you set `image` tag to `your-picture.jpg` and now you can call this image url with `{{ post.image }}`
+
+#### Setting the slug
+The slug of the blogs are now initialized by the filename of the post. So make sure these are meaningfull and unique. `/post/` will be prepended to your slug.
+
+
+
+## Production
+
+There's multiple ways you can deploy your flask blog.
+
+[Heroku](https://progblog.io/How-to-deploy-a-Flask-App-to-Heroku/)
+
+[Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04)
+
+[PythonAnywhere](https://help.pythonanywhere.com/pages/Flask/)

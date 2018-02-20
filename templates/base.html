@@ -7,27 +7,62 @@
         <meta name="description" content="">
           <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css" />
-    <link rel="stylesheet" href="/static/css/simple-grid.css" type="text/css" />
     <link rel="stylesheet" href="/static/css/main.css" type="text/css" />
 </head>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/">FLAT FILE FLASK BLOG</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 <body>
 
 {% block main %} {% endblock %}
 
 </body>
-        <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="foot-links">
-<p>find us and contribute on <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/burgundy93/FlatFileFlaskBlog" target="_blank">github</a></p>
-                        <p>Developed by <a href="https://luucverburgh.com/" target="_blank">Luuc Verburgh</a> and <a
-                                href="https://ronaldlangeveld.com" target="_blank">Ronald Langeveld</a></p>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://github.com/burgundy93/FlatFileFlaskBlog" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Flat File Flask Blog.
+<br>
+Developed by <a href="https://luucverburgh.com/" target="_blank">Luuc Verburgh</a> and <a
+                                href="https://ronaldlangeveld.com" target="_blank">Ronald Langeveld</a>
+            </p>
 
-</div>
-</div>
-</div>
-</div>
+            <p class="copyright text-muted">Theme: <a href="https://startbootstrap.com/template-overviews/clean-blog/" target="_blank">Clean Blog</a> </p>
+
+          </div>
+        </div>
+      </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
 </html>

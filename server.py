@@ -22,6 +22,12 @@ def blog():
     posts = posts_objects.posts
     return render_template('posts.html', posts=posts)
 
+
+@app.route("/about")
+def about():
+
+    return render_template('about.html')
+
 @app.route('/posts/<slug>')
 def single_blog(slug):
     # Shows individual post
